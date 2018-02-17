@@ -67,8 +67,8 @@ function write(strings, dataFile, indexFile, callback) {
 
     indexStream.write("## Count:   " + strings.length + "\r\n");
 
-    //for (var i=0;i<Object.keys(strings).length;i++) {
-    for (var i=0;i<100;i++) { //debug loop
+    for (var i=0;i<Object.keys(strings).length;i++) {
+    //for (var i=0;i<100;i++) { //debug loop
         string = strings[Object.keys(strings)[i]];
 
 	process.stdout.write("Writing... " + i + "/" + Object.keys(strings).length + "\r"); //status output
