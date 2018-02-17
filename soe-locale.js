@@ -76,7 +76,7 @@ function write(strings, dataFile, indexFile, callback) {
         dataLength = (string.hash+"").length + string.flags.length + string.string.length + 2;
 
         indexStream.write(string.hash + "\t" + offset + "\t" + dataLength + "\t" + "d\r\n");
-        dataStream.write(string.hash + "\t" + string.flags + "\t" + string.string + "\r\n");
+        dataStream.write(string.hash + "\t" + string.flags + "\t" + string.string + "\r\r\n");
 
         offset += dataLength + 2;
     }
