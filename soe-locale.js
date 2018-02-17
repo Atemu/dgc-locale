@@ -65,7 +65,7 @@ function write(strings, dataFile, indexFile, callback) {
     dataStream.write(header);
     offset += 3;
 
-    indexStream.write("## Count:   " + strings.length + "\r\n");
+    indexStream.write("## Count:   " + Object.keys(strings).length + "\r\n");
 
     for (var i=0;i<Object.keys(strings).length;i++) {
     //for (var i=0;i<100;i++) { //debug loop
