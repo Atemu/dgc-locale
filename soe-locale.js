@@ -40,7 +40,7 @@ function parseFromBuffer(data, indexData) {
                 stringParts = stringData.split("\t"),
                 flags = stringParts[1],
                 string = stringParts.slice(2).join("\t");
-            strings[hash] = {
+		strings[i] = {
                 hash: hash,
                 flags: flags,
                 string: string
